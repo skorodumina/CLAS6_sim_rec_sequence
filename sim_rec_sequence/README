@@ -1,0 +1,24 @@
+BATCH FARM SUBMISSION SCRIPTS:
+
+* evan_shell.csh is the script that contains the sim/rec sequence and is intended to be executed on farms.
+
+* restart_new.sh is the script for submission multiple sim/rec jobs to the batch farm system.
+
+* jsub_new is a single batch farm submition script.
+
+-----------------------------------------------------------------------
+SIMULATION/RECONSTRUCTION SEQUENCE:
+
+* genev_clas12 is an executable from the old edition of the TWOPEG-D event generator. 
+
+* inp1_fermirad is an input file to the EG.
+
+* ffread_markov.inp is an ffread card for GSIM, which is CLAS6 detector simulation software.
+
+* user_ana_evan is the version of user_ana (CLAS6 reconstruction software), which was compiled by Evan Phelps to force it working on new farms (in 2014).
+
+* inp_recsis_dont_change.tcl is an input file for user_ana.
+
+* nt10maker_mctk_new is the version of nt10maker (CLAS6 software to convert BOS to hbook), which was modified by G. Fedotov & Iu. Skorodumina in 2013. This modified version takes variables from the MCTK bank and writes them into the final hbook output. The source code is located in the separate folder ../nt10maker_mctk/
+
+* branch_add_pfermi.C is an additional script that takes the cross section weight and Fermi momentum components from the file "tree_sigma.root" created by EG and attaches them to the final root tree (after nt10maker) event by event.

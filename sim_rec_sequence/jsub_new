@@ -1,0 +1,11 @@
+PROJECT: e1e
+TRACK: simulation
+JOBNAME: sim_new_gen112264
+MAIL: skorodum@jlab.org
+SINGLE_JOB: TRUE
+OS:  centos65
+MEMORY:  1000 MB
+INPUT_FILES:/volatile/clas/clase1-6/skorodum/genev_clas12_new_fermirad/try_to_rec/ffread_markov.inp /volatile/clas/clase1-6/skorodum/genev_clas12_new_fermirad/try_to_rec/genev_clas12 /volatile/clas/clase1-6/skorodum/genev_clas12_new_fermirad/try_to_rec/inp1_fermirad /volatile/clas/clase1-6/skorodum/genev_clas12_new_fermirad/try_to_rec/inp_recsis_dont_change.tcl /volatile/clas/clase1-6/skorodum/genev_clas12_new_fermirad/try_to_rec/nt10maker_mctk_new /volatile/clas/clase1-6/skorodum/genev_clas12_new_fermirad/try_to_rec/user_ana_evan /volatile/clas/clase1-6/skorodum/genev_clas12_new_fermirad/try_to_rec/branch_add_pfermi.C
+COMMAND:/volatile/clas/clase1-6/skorodum/genev_clas12_new_fermirad/try_to_rec/evan_shell.csh
+OUTPUT_DATA: test.root
+OUTPUT_TEMPLATE:  /mss/clas/e1e/production/simulation_2pi/sim_skorodum_Aug2016/nt10_cont2/nt10_Aug16_newFrad_112264.root

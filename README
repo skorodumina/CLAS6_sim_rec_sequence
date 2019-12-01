@@ -1,0 +1,3 @@
+sim_rec_sequence/ contains the CLAS6 simulation and reconstruction sequence with the corresponding scripts. For more details see the internal README.
+
+nt10maker_mctk/ contains the source code of the modified version of nt10maker, which is a part of CLAS6 software that converts BOS files to hbook files with nt10 trees. This version takes variables from the MCTK bank and writes them into the final hbook output.
